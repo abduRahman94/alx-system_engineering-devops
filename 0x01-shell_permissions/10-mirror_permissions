@@ -1,2 +1,2 @@
 #!/bin/bash
-file_mode=$(stat -c "%a" olleh) && chmod $file_mode hello
+chmod $(stat -c "%a" olleh) hello
