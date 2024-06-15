@@ -1,2 +1,2 @@
 #!/bin/bash
-rv *~
+find . -type f -name '*~' -exec rm {} +
