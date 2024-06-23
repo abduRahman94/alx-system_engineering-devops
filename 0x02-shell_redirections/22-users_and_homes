@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -d: -f1,6 /etc/passwd | tr ':' ' ' | sort
+awk -F: '{printf "%s:/home/%s\n", $1, $6}' /etc/passwd | sort
